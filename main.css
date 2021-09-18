@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+.body{
+    background-color: #34D399;
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #059669;
+    padding: 10px;
+}
+#cash-taken{
+    display: flex;
+    color: black;
+    padding: 0.5rem; 
+    font-weight: bolder;
+    font-size: large;
+}
+#label{
+    display: flex;
+    padding: 0.5rem;
+    font-weight: bolder;
+    font-size: large;
+}
+#cash-give{
+    display: flex;
+    width: 70%;
+    line-height: 2rem;
+}
+#bill-amount{
+    width: 70%;
+    line-height: 2rem;
+  
+}
+#checkButton{
+    margin-left: 4px;
+    margin-top:25px;
+    width: 20%;
+    padding: 0.5rem;
+    text-align: center;
+    background-color:#60A5FA;
+}
+.space{
+    height: 30px;
+}
+th,td,table{
+    border: 0.5px solid black;
+    padding: 0.4rem;
+}
+#capt{
+    font-weight: bolder;
+    font-size: large;
+    text-align: left;
+    margin-left: 8px;
+    padding: 0.4rem;
+}
+#image{
+    position: absolute;
+    top: 24px;
+    left:440px;
+    max-width: 50px;
+}
