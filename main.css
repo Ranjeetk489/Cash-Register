@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 .body{
-    background-color: #f5deb3
-    ;
+    background-color: #f5deb3;
     font-family: 'Open Sans', sans-serif;
 }
 .container{
@@ -61,9 +60,9 @@ th,td,table{
     padding: 0.4rem;
 }
 #image{
-    position: absolute;
-    top: 24px;
-    left:440px;
+    position: relative;
+    top: 60px;
+    left:80px;
     max-width: 50px;
 }
 #register{
