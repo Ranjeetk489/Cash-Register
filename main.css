@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 .body{
-    background-color: #34D399;
+    background-color: #f5deb3
+    ;
     font-family: 'Open Sans', sans-serif;
 }
 .container{
@@ -10,7 +11,7 @@
     text-align: center;
     max-width: 1000px;
     margin: auto;
-    background-color: #059669;
+    background-color: #ffefd5;
     padding: 10px;
 }
 #cash-taken{
@@ -63,4 +64,11 @@ th,td,table{
     top: 24px;
     left:440px;
     max-width: 50px;
+}
+#register{
+    color:burlywood;
+}
+#message{
+    font-size: larger;
+    font-weight: bold;
 }

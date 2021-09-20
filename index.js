@@ -11,20 +11,22 @@ const availableNotes = [2000, 500, 100, 20, 10,5,1];
 document.getElementById("bill-amount").addEventListener("change",showCashGiven);
 checkButton.addEventListener("click" ,function validateCashAmount(){
     hideMessage();
-    if(billAmt.value > 0){
+    if(billAmt.value > 0 && cashGiven.value>0){
         if(cashGiven.value >= billAmt.value){
             var amountToBeReturned = cashGiven.value - billAmt.value;
             calculateChange(amountToBeReturned);
-            capt.innerText = "Return Amount  = " + amountToBeReturned;
-        } else {
-            showMessage("The cash provided should be atleast be equal to the bill");
+            capt.innerText = "Return Amount 💱 = " + amountToBeReturned;
+        } else if(cashGiven.value <= billAmt.value) {
+            
+            showMessage("The provided cash should be atleast equal to the bill!");
         }
     } else{
-        showMessage("Invalid Bill Amount");
-}
+        showMessage("Invalid Bill Amount!");
+        }
 });
 function showMessage(msg){
     message.style.display = "block";
+    message.style.color = "red";
     message.innerText = msg;
 }
 function hideMessage(){
@@ -39,7 +41,10 @@ function calculateChange(amountToBeReturned) {
     }
 }
 function showCashGiven(){
+   
     cash.style.display = "block";
+    
+    
 }
 // applying the same function with if-else in place of foor loop;
     // var twoK = Math.trunc(amountToBeReturned / 2000);
