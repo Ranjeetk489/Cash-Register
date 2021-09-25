@@ -11,9 +11,11 @@ const availableNotes = [2000, 500, 100, 20, 10,5,1];
 document.getElementById("bill-amount").addEventListener("change",showCashGiven);
 checkButton.addEventListener("click" ,function validateCashAmount(){
     hideMessage();
-    if(billAmt.value > 0 && cashGiven.value>0){
-        if(cashGiven.value >= billAmt.value){
-            var amountToBeReturned = cashGiven.value - billAmt.value;
+    var bill = parseInt(billAmt.value);
+    var cashAmt = parseInt(cashGiven.value); 
+    if(bill > 0 && cashAmt>0){
+        if(cashAmt >= bill){
+            var amountToBeReturned = cashAmt - bill;
             calculateChange(amountToBeReturned);
             capt.innerText = "Return Amount 💱 = " + amountToBeReturned;
         } else if(cashGiven.value <= billAmt.value) {
@@ -21,7 +23,7 @@ checkButton.addEventListener("click" ,function validateCashAmount(){
             showMessage("The provided cash should be atleast equal to the bill!");
         }
     } else{
-        showMessage("Invalid Bill Amount!");
+        showMessage("Invalid Bill Amount or Missing Entry!");
         }
 });
 function showMessage(msg){
